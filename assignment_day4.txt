@@ -1,0 +1,40 @@
+> db.users.find()
+
+> db.users.insertMany([{firstname:"Bhavesh",lastname:"Mohale",email:"bhaveshmohale787@gmail.com",gender:"Male",ipAddress:"852.258.41",age:18},{firstname:"jayesh",lastname:"patil",email:"jayesh@gmail.com",gender:"Male",ipAddress:"753.357.37",age:24},{firstname:"Roy",lastname:"Dear",emial:"roy@gmail.com",gender:"Male",ipAddress:"159.951.54",age:24},{firstname:"chakra",lastname:"dhar",email:"chakra@gmail.com",gender:"Male",ipAddress:"357.159.25",age:45},{firstname:"Anil",lastname:"Tabla",email:"anil1969@gmail.com",gender:"Male",ipAdress:"456.654.23",age:52}])
+
+
+> db.users.find({})
+
+> db.users.insertMny([{firstname:"Kunal",lastname:"Doe",email:"kunalDoe@gmail.com",gender:"Male",idAddress:"159.357.2020.12",age:15},
+> db.users.insertMany([{firstname:"Kunal",lastname:"Doe",email:"kunalDoe@gmail.com",gender:"Male",idAddress:"159.357.2020.12",age:15},
+> db.users.find({}).pretty()
+
+> db.users.findOne({firstname:"roy"})
+null
+> db.users.findOne({firstname:"Roy"})
+
+> db.users.findOne({})
+
+> db.users.update({"_id" : ObjectId("61fa90bc6069d4d5d2d368f9")},{$set:{firstname:"Niks"}})
+
+> db.users.findOne({firstname:"Niks"})
+
+> db.users.remove({"_id" : ObjectId("61facca16069d4d5d2d36902")})
+
+> db.users.find({}).pretty()
+
+> db.users.findOne({firstname:"Roy"})
+
+> db.users.findOne({})
+
+
+> db.users.update({"_id" : ObjectId("61fa90bc6069d4d5d2d368f9")},{$set:{firstname:"Niks"}})
+
+> db.users.findOne({firstname:"Niks"})
+
+> db.users.find().pretty()
+
+
+> db.dropDatabase()
+
+> show dbs
